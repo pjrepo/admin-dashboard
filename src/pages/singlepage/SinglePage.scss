@@ -1,0 +1,84 @@
+.singlepage {
+  display: flex;
+  width: 100%;
+
+  .singlepage-container {
+    flex: 6;
+
+    .singlepage-top {
+      padding: 20px;
+      display: flex;
+      gap: 20px;
+
+      .singlepage-top-left {
+        flex: 1;
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        padding: 20px;
+        position: relative;
+
+        .singlepage-edit-btn {
+          position: absolute;
+          top: 0;
+          right: 0;
+          padding: 5px;
+          font-size: 12px;
+          color: crimson;
+          background-color: rgba(248, 123, 148, 0.701);
+          border-radius: 0 0 0 5px;
+        }
+
+        .singlepage-item {
+          display: flex;
+          gap: 20px;
+
+          .singlepage-item-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+
+          .singlepage-details {
+            .singlepage-item-title {
+              margin: 10px;
+              color: #555;
+            }
+
+            .singlepage-detail-item {
+              margin-bottom: 10px;
+              font-size: 14px;
+
+              .singlepage-item-key {
+                font-weight: bold;
+                color: grey;
+                margin-right: 5px;
+              }
+
+              .singlepage-item-value {
+                font-weight: 300;
+              }
+            }
+          }
+        }
+      }
+
+      .singlepage-top-right {
+        flex: 2;
+      }
+    }
+
+    .singlepage-title {
+      font-size: 16px;
+      color: lightgray;
+      margin-bottom: 20px;
+    }
+
+    .singlepage-bottom {
+      -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+      box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+      padding: 20px;
+      margin: 10px 20px;
+    }
+  }
+}
